@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+.container{
+    margin: auto;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.jackiechan{
+    margin-top: 100px;
+    width: 400px;
+    animation: jackie 1.5s infinite forwards;
+    transition: width 2s;
+}
+
+@keyframes jackie {
+    100%{ transform: rotate(360deg);}
+}
+
+.jackiechan:hover{
+    width: 600px;
+}
+
+.thumbsup{
+    opacity: 0;
+    animation: thumbsup 2s alternate infinite;
+}
+@keyframes thumbsup {
+    100%{
+       opacity: 1;
+    }
+}
